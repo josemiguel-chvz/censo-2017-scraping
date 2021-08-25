@@ -1,7 +1,3 @@
-Iniciar ambiente virtual (virtualenv, pipenv)
-
-Instalar librerias script
-
 # Extracción datos Censo 2017 Chile
 
 El siguiente script permite obtener distintos datos desde la pagina web 
