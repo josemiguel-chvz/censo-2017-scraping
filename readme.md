@@ -1,27 +1,21 @@
 # Extracción datos Censo 2017 Chile
 
-El siguiente script permite obtener distintos datos desde la pagina web 
+El siguiente script permite obtener distintos datos desde la pagina web
 ```
 http://resultados.censo2017.cl/
 ```
-generando JSONs para cada región y comuna.
 
-Este JSON puede ser insertado en algún endpoint POST que registre los datos del censo
-según sea el metodo y base de datos del usuario (API, conexión a BD (pymysql, etc))
-
-En caso contrario se genera un archivo JSON con los datos requeridos.
-
-el archivo connector.py presenta un ejemplo de conexión a API.
-
-el script utiliza la libreria Selenium para manejar la pagina web, y los componentes para iterar sobre las comunas y regiones.
-
+Selenium Driver: Chrome
+Utilizando selenium y python, se busca probar la tecnica de web scraping a traves de la automatización
+en la navegación del sitio web del Censo 2017 utilizando los selectores de región y comuna provistos por el sitio.
+La obtención de la data se realiza usando xPath.
+Finalmente se genera un archivo JSON con los datos respectivos sobre la región y sus comunas.
 
 ### Pre-requisitos 📋
 
 Iniciar ambiente virtual (virtualenv, pipenv)
 
-Instalar librerias script
-
+Instalar librerias
 ```
 pip install -r requirements.txt
 ```
